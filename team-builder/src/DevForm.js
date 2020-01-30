@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Form from './Form';
 
 const DevForm = props => {
     console.log('props', props);
@@ -34,7 +35,6 @@ const DevForm = props => {
                 type='text'
                 placeholder="Ada Lovelace"
                 onChange={onInputChange}
-                value={dev.name}
             />
             <br />
             <label htmlFor='Email'>Email: </label>
@@ -44,7 +44,6 @@ const DevForm = props => {
                 type='text'
                 placeholder='adalovelace@gmail.com'
                 onChange={onInputChange}
-                value={dev.email}
                 />
             <br />
             <label htmlFor='Role'>Role: </label>
@@ -54,7 +53,6 @@ const DevForm = props => {
              type='text'
              placeholder='Full-Stack Developer'
              onChange={onInputChange}
-             value={dev.role}
              />
              <br />
              <button type='submit'>Submit</button>
