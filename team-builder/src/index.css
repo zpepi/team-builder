@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  font-family: lobster;
+  font-size: 2rem;
+  color: cornflowerblue;
+}
+
+button {
+  background-color: white;
+  border-radius: 2px;
+  color: cornflowerblue;
+}
+
+button:hover {
+  background-color: cornflowerblue;
+  color: white;
+}
+
+form {
+  background-color: cornflowerblue;
+  color: white;
+  margin-left: 40%;
+  margin-right: 40%;
+  padding: 5% 2%;
+  filter: drop-shadow(2px 5px 5px gray);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
