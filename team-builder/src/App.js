@@ -1,34 +1,34 @@
 import React, { useState } from 'react';
 import './App.css';
-import Form from './Form';
-import DevForm from "./DevForm";
+import Form from './components/Form';
+import DevForm from "./components/DevForm";
 
 function App() {
-  const [ devName, setDevName ] = useState([
+  const [dev, setDev] = useState([
     {
-      name: 'Sans Undertale',
-      email: 'sans@undertale.com',
-      role: 'skeleton'
+      id: 1,
+      name: 'Zoe',
+      email: 'zldpepi@gmail.com',
+      role: 'Web Developer'
     }
   ]);
 
-  const addNewDev = dev => {
+  const addNewDev = props => {
   const newDev = {
-   name: dev.name,
-   email: dev.email,
-   role: dev.role,
+   name: props.name,
+   email: props.email,
+   role: props.role,
   };
-  setDevName([...devName, dev]);
+  setDev([...dev, newDev]);
 }
 
   return (
     <div className="App">
       <h2>Dev Sign-Up</h2>
       <DevForm addNewDev={addNewDev} />
-      <Form devName={devName} />
+      <Form dev={dev} />
       </div>
   );
 }
     
-
 export default App;
